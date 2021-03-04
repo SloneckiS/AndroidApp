@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view"
+    >
+
+    <group />
+    <item
+        android:id="@+id/home_item"
+        android:checked="false"
+        android:enabled="true"
+            android:title="STRONA GŁÓWNA"
+
+        app:showAsAction="always|withText"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/menu"
+        android:enabled="true"
+        android:title="MENÜ"
+        android:visible="true"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/original_taste"
+        android:enabled="true"
+        android:title="ORYGINALNY SMAK"
+        android:visible="true"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/map"
+        android:enabled="true"
+        android:title="RESTAURACJE"
+        android:visible="true"
+        app:showAsAction="always|withText" />
+
+</menu>

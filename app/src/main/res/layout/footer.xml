@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/footer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/footer_text"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:lines="4"
+        android:text="@string/berlinkebap"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnFb"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/social_fb_icon"
+        app:backgroundTint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btyt"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignLeft="@id/btnFb"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/social_yt_icon"
+        app:backgroundTint="#FFFFFF" />
+
+</RelativeLayout>

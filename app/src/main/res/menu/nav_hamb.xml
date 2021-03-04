@@ -7,29 +7,26 @@
 
     <group />
     <item
-        android:id="@+id/home_item"
+        android:id="@+id/news"
         android:checked="false"
         android:enabled="true"
-            android:title="STRONA GŁÓWNA"
+        android:icon="@drawable/ic_baseline_home_24"
 
+        android:title="Aktualności"
         app:showAsAction="always|withText"
         tools:ignore="HardcodedText" />
     <item
-        android:id="@+id/menu"
+        android:id="@+id/eLibrary"
         android:enabled="true"
-        android:title="MENÜ"
+        android:icon="@drawable/ic_baseline_menu_book_24"
+        android:title="E-księgarnia"
         android:visible="true"
         app:showAsAction="always|withText" />
     <item
-        android:id="@+id/original_taste"
+        android:id="@+id/discounts"
         android:enabled="true"
-        android:title="ORYGINALNY SMAK"
-        android:visible="true"
-        app:showAsAction="always|withText" />
-    <item
-        android:id="@+id/map"
-        android:enabled="true"
-        android:title="RESTAURACJE"
+        android:icon="@android:drawable/star_big_on"
+        android:title="PROMOCJE"
         android:visible="true"
         app:showAsAction="always|withText" />
 

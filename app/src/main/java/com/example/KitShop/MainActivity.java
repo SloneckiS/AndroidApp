@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                     new Home()).commit();
-            navigationView.setCheckedItem(R.id.home_item);
+            navigationView.setCheckedItem(R.id.news);
         }
     }
 
@@ -74,15 +74,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()) {
-            case R.id.home_item:
+            case R.id.news:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new Home()).addToBackStack(null).commit();
                 break;
-            case R.id.menu:
+            case R.id.eLibrary:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new MainMenu()).addToBackStack(null).commit();
                 break;
-            case R.id.original_taste:
+            case R.id.discounts:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new MenuList()).addToBackStack(null).commit();
                 break;

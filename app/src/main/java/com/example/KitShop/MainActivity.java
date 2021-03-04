@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import com.example.KitShop.fragments.Home;
 import com.example.KitShop.fragments.MainMenu;
 import com.example.KitShop.fragments.Maps;
+import com.example.KitShop.fragments.MenuList;
 import com.example.KitShop.fragments.Original_Taste;
 import com.google.android.material.navigation.NavigationView;
 
@@ -83,7 +84,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.original_taste:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new Original_Taste()).addToBackStack(null).commit();
+                        new MenuList()).addToBackStack(null).commit();
                 break;
             case R.id.map:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,

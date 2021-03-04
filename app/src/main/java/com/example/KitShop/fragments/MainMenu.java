@@ -32,7 +32,7 @@ public class MainMenu extends Fragment {
             @Override
             public void onClick(View v) {
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
-                transaction.replace(R.id.fragment_container, new Menu());
+                transaction.replace(R.id.fragment_container, new MenuList());
                 transaction.addToBackStack(null);
                 transaction.commit();
             }

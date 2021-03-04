@@ -10,19 +10,7 @@
         android:background="@color/white"
         >
 
-        <ListView
-            android:id="@+id/listView1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true">
-            <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-                android:id="@+id/Row"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textSize="15sp" >
-            </TextView>
-        </ListView>
+
         <ImageView
             android:id="@+id/imageView11"
             android:layout_width="match_parent"

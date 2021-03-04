@@ -1,5 +1,7 @@
 package com.example.KitShop;
+
 import android.content.Context;
+import android.content.Intent;
 import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,7 +21,7 @@ public class CustomAdapter extends BaseAdapter {
     LayoutInflater inflter;
 
     public CustomAdapter(Context applicationContext, String[] countryList, int[] flags) {
-        this.context = context;
+        this.context = applicationContext;
         this.countryList = countryList;
         this.flags = flags;
         inflter = (LayoutInflater.from(applicationContext));

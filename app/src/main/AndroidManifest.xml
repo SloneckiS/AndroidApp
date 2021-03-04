@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.berlindonerkebap">
+    package="com.example.KitShop">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BerlinDonerKebap.NoActionBar">
         <activity
-            android:name=".ProductActivity"
+            android:name="com.example.KitShop.ProductActivity"
             android:label="@string/title_activity_product"
             android:theme="@style/Theme.BerlinDonerKebap.NoActionBar.NoActionBar"></activity>
 
@@ -18,7 +18,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.KitShop.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

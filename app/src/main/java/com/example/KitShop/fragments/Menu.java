@@ -1,4 +1,4 @@
-package com.example.berlindonerkebap.fragments;
+package com.example.KitShop.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,10 +10,15 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 
-import com.example.berlindonerkebap.ProductActivity;
-import com.example.berlindonerkebap.R;
+import com.example.KitShop.ProductActivity;
+import com.example.KitShop.R;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -25,7 +30,8 @@ public class Menu extends Fragment {
     Button btnRoll;
     Button btnRollo;
     Button btnBox;
-
+    private ListView list ;
+    private ArrayAdapter<String> adapter ;
     public Menu() {
 
     }
@@ -36,6 +42,16 @@ public class Menu extends Fragment {
         View view = inflater.inflate(R.layout.fragment_menu, container, false);
         btnRoll = view.findViewById(R.id.btnRoll);
         System.out.println("mam " + btnRoll);
+//        list = (ListView) view.findViewById(R.id.listView1);
+//
+//        String cars[] = {"Mercedes", "Fiat", "Ferrari", "Aston Martin", "Lamborghini", "Skoda", "Volkswagen", "Audi", "Citroen"};
+//
+//        ArrayList<String> carL = new ArrayList<String>();
+//        carL.addAll( Arrays.asList(cars) );
+//
+////        adapter = new ArrayAdapter<String>(this, R.layout.rowmenu, carL);
+//
+//        list.setAdapter(adapter);
         btnRoll.setOnClickListener(new View.OnClickListener() {
 
             @Override

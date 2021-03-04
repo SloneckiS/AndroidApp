@@ -1,4 +1,4 @@
-package com.example.berlindonerkebap.fragments;
+package com.example.KitShop.fragments;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -9,7 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.berlindonerkebap.R;
+import com.example.KitShop.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -42,8 +42,6 @@ public class Maps extends Fragment {
                 mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
 
                 mMap.clear();
-                LatLng latLng = new LatLng(51.76896759582092, 19.49617764133081);
-                LatLng latLng2 = new LatLng(51.784262107129905, 19.447769136961778);
                 LatLng latLng3 = new LatLng(51.762168371221634, 19.466995209618982);
                 CameraPosition googlePlex = CameraPosition.builder()
                         .target(latLng3)
@@ -55,13 +53,7 @@ public class Maps extends Fragment {
 
                 mMap.addMarker(new MarkerOptions()
                         .position(latLng3)
-                        .title("Berlin Döner Kebap - Galeria Łódzka"));
-                mMap.addMarker(new MarkerOptions()
-                        .position(latLng)
-                        .title("Berlin Döner Kebap - Tulipan"));
-                mMap.addMarker(new MarkerOptions()
-                        .position(latLng2)
-                        .title("Berlin Döner Kebap - Manufaktura"));
+                        .title("Koszulki"));
 
             }
         });

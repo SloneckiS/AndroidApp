@@ -1,6 +1,5 @@
-package com.example.berlindonerkebap.fragments;
+package com.example.KitShop.fragments;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -12,10 +11,8 @@ import androidx.fragment.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
-import com.example.berlindonerkebap.ProductActivity;
-import com.example.berlindonerkebap.R;
+import com.example.KitShop.R;
 
 /**
  * A simple {@link Fragment} subclass.

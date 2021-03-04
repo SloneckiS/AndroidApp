@@ -10,7 +10,19 @@
         android:background="@color/white"
         >
 
-
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+            <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/Row"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp" >
+            </TextView>
+        </ListView>
         <ImageView
             android:id="@+id/imageView11"
             android:layout_width="match_parent"
@@ -24,12 +36,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView11"
-            android:layout_centerInParent="true"
-            android:layout_marginTop="-20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="-13dp"
             android:background="@color/red"
             android:text="Kebap w bułce"
-            android:textStyle="bold"
             android:textColor="@color/white"
+            android:textStyle="bold"
             app:backgroundTint="@color/red" />
 
         <ImageView

@@ -1,4 +1,4 @@
-package com.example.berlindonerkebap;
+package com.example.KitShop;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -10,12 +10,10 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.example.berlindonerkebap.fragments.Contact;
-import com.example.berlindonerkebap.fragments.Home;
-import com.example.berlindonerkebap.fragments.MainMenu;
-import com.example.berlindonerkebap.fragments.Maps;
-import com.example.berlindonerkebap.fragments.Menu;
-import com.example.berlindonerkebap.fragments.Original_Taste;
+import com.example.KitShop.fragments.Home;
+import com.example.KitShop.fragments.MainMenu;
+import com.example.KitShop.fragments.Maps;
+import com.example.KitShop.fragments.Original_Taste;
 import com.google.android.material.navigation.NavigationView;
 
 

@@ -1,4 +1,4 @@
-package com.example.berlindonerkebap.fragments;
+package com.example.KitShop.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,8 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.example.berlindonerkebap.ProductActivity;
-import com.example.berlindonerkebap.R;
+import com.example.KitShop.ProductActivity;
+import com.example.KitShop.R;
 
 /**
  * A simple {@link Fragment} subclass.

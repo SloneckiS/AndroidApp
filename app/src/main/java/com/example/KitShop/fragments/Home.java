@@ -1,7 +1,6 @@
-package com.example.berlindonerkebap.fragments;
+package com.example.KitShop.fragments;
 
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -16,7 +15,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
-import com.example.berlindonerkebap.R;
+import com.example.KitShop.R;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -42,7 +41,7 @@ public class Home extends Fragment {
         }
 
         ButtonFB = view.findViewById(R.id.btnFb);
-        uriFB = Uri.parse("https://www.facebook.com/BerlinDonerKebap");
+        uriFB = Uri.parse("https://www.facebook.com");
 
 
         ButtonFB.setOnClickListener(new View.OnClickListener() {
@@ -55,7 +54,7 @@ public class Home extends Fragment {
 
 
         ButtonYT = view.findViewById(R.id.btyt);
-        uriYT = Uri.parse("https://www.youtube.com/channel/UCXrC6VvwSrzl_u8rugMfUGg");
+        uriYT = Uri.parse("https://www.youtube.com");
 
 
         ButtonYT.setOnClickListener(new View.OnClickListener() {

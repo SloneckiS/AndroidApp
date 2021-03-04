@@ -1,4 +1,4 @@
-package com.example.berlindonerkebap;
+package com.example.KitShop;
 
 import android.os.Bundle;
 import android.widget.ImageView;

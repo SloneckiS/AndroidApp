@@ -16,7 +16,7 @@
         android:background="#000000"
         android:gravity="center"
         android:lines="4"
-        android:text="@string/berlinkebap"
+        android:text="@string/kitshop"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textStyle="bold" />

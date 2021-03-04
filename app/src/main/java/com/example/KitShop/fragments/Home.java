@@ -53,7 +53,7 @@ public class Home extends Fragment {
         });
 
 
-        ButtonYT = view.findViewById(R.id.btyt);
+        ButtonYT = view.findViewById(R.id.btnYt);
         uriYT = Uri.parse("https://www.youtube.com");
 
 

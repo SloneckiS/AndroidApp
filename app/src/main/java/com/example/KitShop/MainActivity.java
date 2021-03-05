@@ -8,26 +8,33 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 
+import com.example.KitShop.fragments.BasketFragment;
 import com.example.KitShop.fragments.Home;
 import com.example.KitShop.fragments.MainMenu;
 import com.example.KitShop.fragments.Maps;
 import com.example.KitShop.fragments.MenuList;
 import com.example.KitShop.fragments.Original_Taste;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
     private Toolbar toolbar;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         components();
+
 
 //        wyłączona dla mojego telefonu
         setupActionBar();
@@ -76,7 +83,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (menuItem.getItemId()) {
             case R.id.news:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new Home()).addToBackStack(null).commit();
+                        new BasketFragment()).addToBackStack(null).commit();
                 break;
             case R.id.eLibrary:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,

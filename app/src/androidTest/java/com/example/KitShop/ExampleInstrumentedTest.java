@@ -1,4 +1,4 @@
-package com.example.elibrary;
+package com.example.KitShop;
 
 import android.content.Context;
 

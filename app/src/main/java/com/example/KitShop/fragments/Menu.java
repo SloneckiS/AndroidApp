@@ -1,4 +1,4 @@
-package com.example.elibrary.fragments;
+package com.example.KitShop.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,8 +14,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
-import com.example.elibrary.ProductActivity;
-import com.example.elibrary.R;
+import com.example.KitShop.ProductActivity;
+import com.example.KitShop.R;
 
 /**
  * A simple {@link Fragment} subclass.

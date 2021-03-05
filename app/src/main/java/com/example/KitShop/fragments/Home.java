@@ -1,4 +1,4 @@
-package com.example.elibrary.fragments;
+package com.example.KitShop.fragments;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -15,7 +15,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
-import com.example.elibrary.R;
+import com.example.KitShop.R;
 
 /**
  * A simple {@link Fragment} subclass.

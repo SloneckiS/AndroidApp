@@ -1,4 +1,4 @@
-package com.example.elibrary.fragments;
+package com.example.KitShop.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,8 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.elibrary.CustomAdapter;
-import com.example.elibrary.R;
+import com.example.KitShop.CustomAdapter;
+import com.example.KitShop.R;
 
 public class MenuList extends Fragment {
     public MenuList(){

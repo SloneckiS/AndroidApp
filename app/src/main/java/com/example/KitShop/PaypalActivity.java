@@ -31,7 +31,6 @@ public class PaypalActivity extends AppCompatActivity {
             .clientId(Config.PAYPAL_CLIENT_ID);
 
     Button btnPayNow;
-    EditText edtAmount;
 
     String amount = "";
 
@@ -52,7 +51,6 @@ public class PaypalActivity extends AppCompatActivity {
         startService(intent);
 
         btnPayNow = (Button)findViewById(R.id.btnPayNow);
-        edtAmount = (EditText)findViewById(R.id.edtAmount);
 
         btnPayNow.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,7 +61,7 @@ public class PaypalActivity extends AppCompatActivity {
     }
 
     private void processPayment(){
-        amount = edtAmount.getText().toString();
+        amount = String.valueOf(Basket.totalPrice);
         PayPalPayment payPalPayment = new PayPalPayment(new BigDecimal(String.valueOf(amount)),"USD",
                 "Donate for EDMTDev", PayPalPayment.PAYMENT_INTENT_SALE);
         Intent intent = new Intent(this, PaymentActivity.class);

@@ -1,5 +1,6 @@
 package com.example.KitShop.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -15,6 +16,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.KitShop.Basket;
+import com.example.KitShop.PaypalActivity;
+import com.example.KitShop.ProductActivity;
 import com.example.KitShop.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -50,6 +53,7 @@ public class OrderFragment extends Fragment {
                 System.out.println("----name------" + name);
                 Map<String, Object> order = new HashMap<>();
                 order.put("total_price", totalPrice);
+                Basket.totalPrice = totalPrice;
                 order.put("name", name);
                 order.put("address", adress);
                 order.put("ksiazki", Basket.products);
@@ -60,6 +64,8 @@ public class OrderFragment extends Fragment {
                             @Override
                             public void onSuccess(DocumentReference documentReference) {
                                 Log.d("TAG", "DocumentSnapshot added with ID: " + documentReference.getId());
+                                Intent intent = new Intent(getActivity(), PaypalActivity.class);
+                                startActivity(intent);
                             }
                         })
                         .addOnFailureListener(new OnFailureListener() {

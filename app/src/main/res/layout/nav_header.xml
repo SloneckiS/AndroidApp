@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="245dp"
     android:background="#000000"
@@ -7,17 +9,24 @@
     android:orientation="vertical"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
-    <ImageView
-        android:id="@+id/image4"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="215dp"
-        android:layout_below="@+id/textView3"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="5dp"
-        android:layout_marginRight="20dp"
-        android:scaleType="centerInside"
-        android:src="@drawable/bdk_logo"/>
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="421dp"
+            android:layout_height="250dp"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="20dp"
+            android:alpha="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/elibrary_logo" />
+
+    </FrameLayout>
 
 
 </LinearLayout>

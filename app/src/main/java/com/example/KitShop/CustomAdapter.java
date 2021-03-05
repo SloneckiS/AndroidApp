@@ -66,23 +66,6 @@ public class CustomAdapter extends BaseAdapter {
         name.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View viewIn) {
-                Map<String, Object> user = new HashMap<>();
-                user.put("ksiazka", "1");
-
-//                db.collection("zamówienia")
-//                        .add(user)
-//                        .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-//                            @Override
-//                            public void onSuccess(DocumentReference documentReference) {
-//                                Log.d("TAG", "DocumentSnapshot added with ID: " + documentReference.getId());
-//                            }
-//                        })
-//                        .addOnFailureListener(new OnFailureListener() {
-//                            @Override
-//                            public void onFailure(@NonNull Exception e) {
-//                                Log.w("TAG", "Error adding document", e);
-//                            }
-//                        });
                 System.out.println("-----i------" + i);
                 System.out.println("-----i------" + description);
                 System.out.println("-----i------" + nameList);

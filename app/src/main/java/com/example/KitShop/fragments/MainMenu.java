@@ -79,10 +79,6 @@ public class MainMenu extends Fragment {
                             }
                         });
 
-//                FragmentTransaction transaction = getFragmentManager().beginTransaction();
-//                transaction.replace(R.id.fragment_container, new MenuList());
-//                transaction.addToBackStack(null);
-//                transaction.commit();
             }
         });
 

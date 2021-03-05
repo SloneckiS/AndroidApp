@@ -14,6 +14,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.KitShop.Basket;
 import com.example.KitShop.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -31,25 +32,27 @@ public class OrderFragment extends Fragment {
     }
     Double totalPrice;
     EditText nameTv;
+    EditText adressTv;
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.order_fragment, container, false);
 
         Bundle arguments = getArguments();
         totalPrice = arguments.getDouble("price");
         nameTv = (EditText) view.findViewById(R.id.nameOrder);
-        EditText adressTv = (EditText) view.findViewById(R.id.adres);
-        System.out.println("get text " + nameTv.getText());
-        String name = nameTv.getText().toString();
-        String adress = String.valueOf(adressTv.getText());
-        System.out.println("----name-----" + name);
+        adressTv = (EditText) view.findViewById(R.id.adres);
+
         Button doOrder = (Button) view.findViewById(R.id.orderFinal);
         doOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String name = nameTv.getText().toString();
+                String adress = String.valueOf(adressTv.getText());
+                System.out.println("----name------" + name);
                 Map<String, Object> order = new HashMap<>();
                 order.put("total_price", totalPrice);
                 order.put("name", name);
                 order.put("address", adress);
+                order.put("ksiazki", Basket.products);
                 FirebaseFirestore db = FirebaseFirestore.getInstance();
                 db.collection("Zamówienia")
                         .add(order)

@@ -16,7 +16,7 @@
 //        TextView tvTitle = (TextView)findViewById(R.id.titlePro);
 //        tvTitle.setText( getIntent().getStringExtra("Name"));
 //        TextView tvDesc = (TextView)findViewById(R.id.pDesc);
-//        tvDesc.setText( getIntent().getStringExtra("Desc"));
+//        tvDesc.setTextetText( getIntent().getStringExtra("Desc"));
 //        ImageView imBurger = (ImageView) findViewById(R.id.ivproductd);
 //        imBurger.setImageResource(getIntent().getIntExtra("pic",1));
 //    }

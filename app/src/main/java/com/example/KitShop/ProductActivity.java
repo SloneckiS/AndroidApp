@@ -1,10 +1,12 @@
 package com.example.KitShop;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,12 +27,14 @@ public class ProductActivity extends AppCompatActivity {
         addToBasketBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println("---------ad to basket-----------");
                 Basket.products.add(getIntent().getStringExtra("Name"));
                 Basket.price.add(getIntent().getStringExtra("price"));
-                System.out.println("---------ad to basket-----------" + Basket.products);
-                System.out.println("---------ad to basket-----------" + Basket.price);
+                Context context = getApplicationContext();
+                CharSequence text = "Dodano do koszyka";
+                int duration = Toast.LENGTH_SHORT;
 
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
             }
         });
 

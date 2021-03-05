@@ -9,6 +9,9 @@ import android.widget.TextView;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class PaymentDetails extends AppCompatActivity {
 
     TextView txtId,txtAmount,txtStatus;
@@ -18,7 +21,9 @@ public class PaymentDetails extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment_details);
-
+        Basket.products = new ArrayList<>();
+        Basket.price = new ArrayList<>();
+        Basket.totalPrice = 0.0;
         txtId = (TextView)findViewById(R.id.txtId);
         txtAmount = (TextView)findViewById(R.id.txtAmount);
         txtStatus = (TextView)findViewById(R.id.txtStatus);

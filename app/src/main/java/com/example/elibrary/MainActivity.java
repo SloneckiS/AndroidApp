@@ -1,4 +1,4 @@
-package com.example.KitShop;
+package com.example.elibrary;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -10,11 +10,11 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.example.KitShop.fragments.Home;
-import com.example.KitShop.fragments.MainMenu;
-import com.example.KitShop.fragments.Maps;
-import com.example.KitShop.fragments.MenuList;
-import com.example.KitShop.fragments.Original_Taste;
+import com.example.elibrary.R;
+import com.example.elibrary.fragments.Home;
+import com.example.elibrary.fragments.MainMenu;
+import com.example.elibrary.fragments.Maps;
+import com.example.elibrary.fragments.MenuList;
 import com.google.android.material.navigation.NavigationView;
 
 

@@ -1,6 +1,5 @@
-package com.example.KitShop;
+package com.example.elibrary;
 import android.content.Context;
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,9 +7,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.KitShop.R;
-
-import java.util.zip.Inflater;
+import com.example.elibrary.R;
 
 public class CustomAdapter extends BaseAdapter {
     Context context;

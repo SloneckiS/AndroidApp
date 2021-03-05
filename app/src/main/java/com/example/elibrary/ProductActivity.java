@@ -1,4 +1,4 @@
-package com.example.KitShop;
+package com.example.elibrary;
 
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -6,6 +6,8 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.elibrary.R;
 
 public class ProductActivity extends AppCompatActivity {
     @Override

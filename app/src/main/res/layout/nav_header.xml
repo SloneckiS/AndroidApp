@@ -1,23 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="245dp"
+    android:layout_centerHorizontal="true"
     android:background="#000000"
     android:gravity="bottom"
     android:orientation="vertical"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
-    <ImageView
-        android:id="@+id/image4"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="215dp"
-        android:layout_below="@+id/textView3"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="5dp"
-        android:layout_marginRight="20dp"
-        android:scaleType="centerInside"
-        android:src="@drawable/bdk_logo"/>
+        android:layout_height="match_parent">
 
+        <ImageView
+            android:id="@+id/elibraryLogo"
+            android:layout_width="434dp"
+            android:layout_height="245dp"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="20dp"
+            android:alpha="0.2"
+            android:scaleType="center"
+            android:src="@drawable/elibrary_logo"></ImageView>
 
+        <TextView
+            android:id="@+id/sidemenuAppName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp"
+            android:alpha="1"
+            android:rotationX="10"
+            android:text="E-księgarnia"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+    </FrameLayout>
 </LinearLayout>

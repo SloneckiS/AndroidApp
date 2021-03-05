@@ -1,4 +1,4 @@
-package com.example.KitShop.fragments;
+package com.example.elibrary.fragments;
 
 import android.os.Bundle;
 
@@ -12,7 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.KitShop.R;
+import com.example.elibrary.R;
 
 /**
  * A simple {@link Fragment} subclass.

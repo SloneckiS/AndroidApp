@@ -1,21 +1,17 @@
-package com.example.KitShop.fragments;
+package com.example.elibrary.fragments;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.app.ListFragment;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.KitShop.CustomAdapter;
-import com.example.KitShop.R;
+import com.example.elibrary.CustomAdapter;
+import com.example.elibrary.R;
 
 public class MenuList extends Fragment {
     public MenuList(){

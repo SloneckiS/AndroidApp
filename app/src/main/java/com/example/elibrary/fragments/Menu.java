@@ -38,23 +38,10 @@ public class Menu extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_menu, container, false);
         btnRoll = view.findViewById(R.id.btnRoll);
-        System.out.println("mam " + btnRoll);
-//        list = (ListView) view.findViewById(R.id.listView1);
-//
-//        String cars[] = {"Mercedes", "Fiat", "Ferrari", "Aston Martin", "Lamborghini", "Skoda", "Volkswagen", "Audi", "Citroen"};
-//
-//        ArrayList<String> carL = new ArrayList<String>();
-//        carL.addAll( Arrays.asList(cars) );
-//
-////        adapter = new ArrayAdapter<String>(this, R.layout.rowmenu, carL);
-//
-//        list.setAdapter(adapter);
         btnRoll.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                System.out.println("11111mam " + btnRoll);
-
                 Intent intent = new Intent(getActivity(), ProductActivity.class);
                 intent.putExtra("Name", "KEBAP W BUŁCE");
                 intent.putExtra("Desc", "Absolutna klasyka gatunku i jedna z naszych najpopularniejszych potraw. Jej smak to kombinacja chrupiącego pieczywa, świeżo krojonych warzyw, oryginalnych sosów i oczywiście jednego z naszych wyjątkowych mięs. Kebap w bułce był pierwszą potrawą, którą serwowaliśmy naszym klientom.\n" +

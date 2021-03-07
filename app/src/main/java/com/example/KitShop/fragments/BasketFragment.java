@@ -34,8 +34,6 @@ public class BasketFragment extends Fragment {
         Bundle arguments = getArguments();
         nameList2 = Basket.products;
         prices = Basket.price;
-        System.out.println("----------from fragment name------" + nameList2);
-        System.out.println("----------from fragment name------" + Basket.products);
         ListView listView = view.findViewById(R.id.basket_list);
         BasketAdapter basketAdapter = new BasketAdapter(getActivity(),nameList2 , (ArrayList<String>) prices);
         listView.setAdapter(basketAdapter);

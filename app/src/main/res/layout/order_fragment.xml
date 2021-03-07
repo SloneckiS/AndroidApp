@@ -7,6 +7,14 @@
     android:background="@color/white"
     >
 
+
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Podaj imie i nazwisko"
+        android:textColor="@color/black" />
     <EditText
         android:id="@+id/nameOrder"
         android:layout_width="fill_parent"
@@ -15,6 +23,13 @@
         android:textColor="@color/red"
         android:inputType="text"
         />
+    <TextView
+        android:id="@+id/tvaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Podaj adres"
+        android:textColor="@color/black" />
     <EditText
         android:id="@+id/adres"
         android:layout_width="fill_parent"

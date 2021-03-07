@@ -62,8 +62,8 @@ public class PaypalActivity extends AppCompatActivity {
 
     private void processPayment(){
         amount = String.valueOf(Basket.totalPrice);
-        PayPalPayment payPalPayment = new PayPalPayment(new BigDecimal(String.valueOf(amount)),"USD",
-                "Donate for EDMTDev", PayPalPayment.PAYMENT_INTENT_SALE);
+        PayPalPayment payPalPayment = new PayPalPayment(new BigDecimal(String.valueOf(amount)),"PLN",
+                "Zamowienie", PayPalPayment.PAYMENT_INTENT_SALE);
         Intent intent = new Intent(this, PaymentActivity.class);
         intent.putExtra(PayPalService.EXTRA_PAYPAL_CONFIGURATION, config);
         intent.putExtra(PaymentActivity.EXTRA_PAYMENT, payPalPayment);

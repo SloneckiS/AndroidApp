@@ -10,9 +10,9 @@
         android:id="@+id/news"
         android:checked="false"
         android:enabled="true"
-        android:icon="@drawable/ic_baseline_home_24"
+        android:icon="@drawable/ic_baseline_shopping_basket_24"
 
-        android:title="Aktualności"
+        android:title="Koszyk"
         app:showAsAction="always|withText"
         tools:ignore="HardcodedText" />
     <item
@@ -25,8 +25,8 @@
     <item
         android:id="@+id/discounts"
         android:enabled="true"
-        android:icon="@android:drawable/star_big_on"
-        android:title="PROMOCJE"
+        android:icon="@drawable/ic_baseline_map_24"
+        android:title="Znajdź nas"
         android:visible="true"
         app:showAsAction="always|withText" />
 

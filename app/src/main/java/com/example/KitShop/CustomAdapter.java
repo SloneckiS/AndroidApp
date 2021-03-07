@@ -65,9 +65,6 @@ public class CustomAdapter extends BaseAdapter {
         name.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View viewIn) {
-                System.out.println("-----i------" + i);
-                System.out.println("-----i------" + description);
-                System.out.println("-----i------" + nameList);
                 Intent intent = new Intent(context, ProductActivity.class);
                 intent.putExtra("Name",nameList.get(i));
                 intent.putExtra("Desc", description.get(i));

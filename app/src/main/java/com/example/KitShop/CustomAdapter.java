@@ -16,7 +16,6 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -66,9 +65,6 @@ public class CustomAdapter extends BaseAdapter {
         name.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View viewIn) {
-                System.out.println("-----i------" + i);
-                System.out.println("-----i------" + description);
-                System.out.println("-----i------" + nameList);
                 Intent intent = new Intent(context, ProductActivity.class);
                 intent.putExtra("Name",nameList.get(i));
                 intent.putExtra("Desc", description.get(i));

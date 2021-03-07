@@ -16,4 +16,5 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="title_activity_product">ProductActivity</string>
     <string name="authors">Słonecki | Woźniak | Wasilew</string>
+    <string name="title_activity_main2">MainActivity</string>
 </resources>

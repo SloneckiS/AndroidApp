@@ -91,10 +91,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.discounts:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new MenuList()).addToBackStack(null).commit();
-                break;
-            case R.id.map:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new Maps()).addToBackStack(null).commit();
                 break;
         }

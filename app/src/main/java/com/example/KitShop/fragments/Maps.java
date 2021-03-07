@@ -42,7 +42,7 @@ public class Maps extends Fragment {
                 mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
 
                 mMap.clear();
-                LatLng latLng3 = new LatLng(51.762168371221634, 19.466995209618982);
+                LatLng latLng3 = new LatLng(51.77662958147768, 19.489377646595152);
                 CameraPosition googlePlex = CameraPosition.builder()
                         .target(latLng3)
                         .zoom(12)
@@ -53,7 +53,7 @@ public class Maps extends Fragment {
 
                 mMap.addMarker(new MarkerOptions()
                         .position(latLng3)
-                        .title("Koszulki"));
+                        .title("Ksiegarnia"));
 
             }
         });

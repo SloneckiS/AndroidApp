@@ -266,7 +266,7 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:src="@drawable/imag11"
+                        android:src="@drawable/image11"
                         android:layout_gravity="center_horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />

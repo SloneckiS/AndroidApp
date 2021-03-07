@@ -49,20 +49,19 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:src="@drawable/sezonowe"
                         android:layout_gravity="center_horizontal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
                     <TextView
-                        android:text="SEZONOWE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Kryminał"
                         android:textAlignment="center"
                         android:textColor="@android:color/white"
                         android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal" />
+                        android:textStyle="bold" />
 
 
                 </LinearLayout>
@@ -94,13 +93,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/salatki" />
+                         />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
-                        android:text="SAŁATKI"
+                        android:text="Fantasy"
                         android:textAlignment="center"
                         android:textColor="@android:color/white"
                         android:textSize="18sp"
@@ -138,13 +137,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/kebab" />
+                         />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
-                        android:text="KEBAP MENÜ"
+                        android:text="Horror"
                         android:textAlignment="center"
                         android:textColor="@android:color/white"
                         android:textSize="18sp"
@@ -178,13 +177,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/slim" />
+                         />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
-                        android:text="SLIM MENÜ"
+                        android:text="Dramat"
                         android:textAlignment="center"
                         android:textColor="@android:color/white"
                         android:textSize="18sp"
@@ -221,13 +220,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/vege" />
+                         />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
-                        android:text="VEGE FOOD"
+                        android:text="Komiks"
                         android:textAlignment="center"
                         android:textColor="@android:color/white"
                         android:textSize="18sp"
@@ -261,13 +260,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/zadrobne" />
+                         />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
-                        android:text="ZJEDZ ZA DROBNE"
+                        android:text="Biografia"
                         android:textAlignment="center"
                         android:textColor="@android:color/white"
                         android:textSize="18sp"
@@ -300,7 +299,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/kids" />
+                         />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -339,13 +338,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/drinks" />
+                         />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
-                        android:text="NAPOJE"
+                        android:text="Erotyk"
                         android:textAlignment="center"
                         android:textColor="@android:color/white"
                         android:textSize="18sp"

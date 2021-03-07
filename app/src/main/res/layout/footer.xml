@@ -31,29 +31,10 @@
         android:background="@drawable/social_yt_icon"
         app:backgroundTint="#FFFFFF" />
 
-    <Button
-        android:id="@+id/btnTwitter"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="17dp"
-        android:background="@drawable/social_twitter_icon"
-        app:backgroundTint="#FFFFFF"
-        tools:layout_alignLeft="@id/btnYt" />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-    </LinearLayout>
-
     <TextView
         android:id="@+id/appName"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="false"
         android:layout_marginStart="300dp"
         android:layout_marginLeft="300dp"
         android:text="@string/app_name"
@@ -63,7 +44,7 @@
 
     <TextView
         android:id="@+id/copyrights"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="230dp"
         android:layout_marginLeft="230dp"

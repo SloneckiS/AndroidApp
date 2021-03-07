@@ -34,7 +34,7 @@ public class Home extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         vFlipper = view.findViewById(R.id.flipper);
-        int images[] = {R.drawable.imag11,R.drawable.image22,R.drawable.image33,R.drawable.image44};
+        int images[] = {R.drawable.image11,R.drawable.image22,R.drawable.image33,R.drawable.image44};
         for(int i: images)
         {
             flipperImages(i);
